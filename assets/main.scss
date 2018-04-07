@@ -1,0 +1,28 @@
+/*
+
+Variable declaration
+
+*/
+
+$container-height:500px;
+
+/*
+
+start - Intro container
+
+*/
+
+.intro-container {
+	height:$container-height;
+}
+
+.intro-container .second-half {
+	background-image:url(../assets/intro-bg.png);
+	background-size:cover;
+}
+
+.intro-container {
+	.second-half, .first-half {
+	width:50%;
+	height:100%;	
+}}
