@@ -1,2 +1,2 @@
 # jnk-site
-learn Git while rebuilding portfolio
+rebuild portfolio & learn Git, SASS, CSS Grid, Gulp, Node
