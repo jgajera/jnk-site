@@ -5,6 +5,11 @@ Variable declaration
 */
 
 $container-height:500px;
+$container:grid;
+$column-size:grid-template-columns;
+$row-size:grid-template-rows;
+$column:grid-column;
+$row:grid-row;
 
 /*
 
@@ -14,10 +19,11 @@ start - Intro container
 
 .intro-container {
 	height:$container-height;
+	display:$container;
 }
 
 .intro-container .second-half {
-	background-image:url(../assets/intro-bg.png);
+	background-image:url(/assets/intro-bg-purple.png);
 	background-size:cover;
 }
 
@@ -26,3 +32,4 @@ start - Intro container
 	width:50%;
 	height:100%;	
 }}
+
