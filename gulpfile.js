@@ -4,18 +4,25 @@ var gulp = require("gulp"),//http://gulpjs.com/
 	autoprefixer = require('gulp-autoprefixer'),//https://www.npmjs.org/package/gulp-autoprefixer
 	minifycss = require('gulp-minify-css'),//https://www.npmjs.org/package/gulp-minify-css
 	rename = require('gulp-rename'),//https://www.npmjs.org/package/gulp-rename
-	log = util.log;
+	log = util.log;  
+
+
+
+gulp.task('default', function() {
+  // place code for your default task here
+});
+
 
 
 gulp.task("sass", function(){
 	log("Generate CSS files " + (new Date()).toString());
-    gulp.src(sassFiles)
+    gulp.src('assets/main.scss')
 		.pipe(sass({ style: 'expanded' }))
 			.pipe(autoprefixer("last 3 version","safari 5", "ie 8", "ie 9"))
 		.pipe(gulp.dest("target/css"))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(minifycss())
-		.pipe(gulp.dest('target/css'));
+		.pipe(gulp.dest('assets'));
 });
 
 gulp.task("watch", function(){
