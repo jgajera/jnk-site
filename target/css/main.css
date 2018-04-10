@@ -10,7 +10,7 @@ start - Intro container
 */
 .intro-container {
   height: 500px;
-  display: grid; }
+  display: inline-grid; }
 
 .intro-container .second-half {
   background-image: url(/assets/intro-bg-purple.png);

@@ -1,1 +1,1 @@
-.intro-container{height:500px;display:grid}.intro-container .second-half{background-image:url(/assets/intro-bg-purple.png);background-size:cover}.intro-container .first-half,.intro-container .second-half{width:50%;height:100%}
+.intro-container{height:500px;display:inline-grid}.intro-container .second-half{background-image:url(/assets/intro-bg-purple.png);background-size:cover}.intro-container .first-half,.intro-container .second-half{width:50%;height:100%}
