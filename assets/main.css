@@ -1,0 +1,41 @@
+/*
+
+Variable declaration
+
+*/
+/* 
+
+Global styles
+
+*/
+body {
+  margin: 0; }
+
+/*
+
+Intro container
+
+*/
+.first_intro {
+  background-image: url(intro-bg-purple.png);
+  background-size: cover;
+  background-position: 50%;
+  height: 100vh; }
+
+/*
+
+Mobile-services container
+
+*/
+.second_mobile-services {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 500px; }
+
+.second_mobile-services .first-half {
+  background: white; }
+
+.second_mobile-services .second-half {
+  background-image: url(intro-bg-purple.png);
+  background-size: cover;
+  background-position: 50%; }

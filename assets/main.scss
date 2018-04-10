@@ -4,32 +4,59 @@ Variable declaration
 
 */
 
-$container-height:500px;
-$container:inline-grid;
-$column-size:grid-template-columns;
-$row-size:grid-template-rows;
+$container-grid:grid;
+$column-size:50% 50%;
+$row-size:500px;
 $column:grid-column;
 $row:grid-row;
+$white-bg:white;
 
-/*
 
-start - Intro container
+
+/* 
+
+Global styles
 
 */
 
-.intro-container {
-	height:$container-height;
-	display:$container;
+body {
+	margin:0;
 }
 
-.intro-container .second-half {
-	background-image:url(/assets/intro-bg-purple.png);
+/*
+
+Intro container
+
+*/
+
+.first_intro {
+	background-image:url(intro-bg-purple.png);
 	background-size:cover;
+	background-position:50%;
+	height:100vh;
 }
 
-.intro-container {
-	.second-half, .first-half {
-	width:50%;
-	height:100%;	
-}}
+
+/*
+
+Mobile-services container
+
+*/
+
+.second_mobile-services {
+	display:$container-grid;
+	grid-template-columns:$column-size;
+	grid-template-rows:$row-size;
+}
+
+.second_mobile-services {
+	.first-half {
+	background:$white-bg;
+}
+	.second-half {
+	background-image:url(intro-bg-purple.png);
+	background-size:cover;
+	background-position:50%;
+	}
+}
 

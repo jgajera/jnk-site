@@ -3,6 +3,14 @@
 Variable declaration
 
 */
+/* 
+
+Global styles
+
+*/
+body {
+  margin: 0; }
+
 /*
 
 start - Intro container
@@ -10,12 +18,7 @@ start - Intro container
 */
 .intro-container {
   height: 500px;
-  display: inline-grid; }
-
-.intro-container .second-half {
-  background-image: url(/assets/intro-bg-purple.png);
-  background-size: cover; }
-
-.intro-container .second-half, .intro-container .first-half {
-  width: 50%;
-  height: 100%; }
+  display: grid;
+  background-image: url(../assets/intro-bg-purple.png);
+  background-size: cover;
+  grid-template-columns: 50% 50%; }

@@ -7,7 +7,6 @@ var gulp = require("gulp"),//http://gulpjs.com/
 	log = util.log;  
 
 
-
 gulp.task('default', function() {
   // place code for your default task here
 });
@@ -19,13 +18,13 @@ gulp.task("sass", function(){
     gulp.src('assets/main.scss')
 		.pipe(sass({ style: 'expanded' }))
 			.pipe(autoprefixer("last 3 version","safari 5", "ie 8", "ie 9"))
-		.pipe(gulp.dest("target/css"))
+		.pipe(gulp.dest("assets"))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(minifycss())
 		.pipe(gulp.dest('assets'));
 });
 
-gulp.task("watch", function(){
-	log("Watching scss files for modifications");
-	gulp.watch(sassFiles, ["sass"]);
+//Watch task
+gulp.task('default',function() {
+    gulp.watch('assets/*.scss',['sass']);
 });
