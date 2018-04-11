@@ -135,6 +135,9 @@ Mobile-services container
 .second_mobile-services {
     .second_left {
         background: $tert-color;
+        display: grid;
+        grid-template-rows: repeat(4, 25%);
+        align-items: center;
     }
     .second_right {
         background-image: url(intro-bg-purple.png);

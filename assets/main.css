@@ -100,7 +100,12 @@ Mobile-services container
   grid-template-rows: 500px; }
 
 .second_mobile-services .second_left {
-  background: #fff; }
+  background: #fff;
+  display: grid;
+  grid-template-rows: repeat(4, 25%);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .second_mobile-services .second_right {
   background-image: url(intro-bg-purple.png);
