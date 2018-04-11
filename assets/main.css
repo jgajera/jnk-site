@@ -33,7 +33,7 @@ Mobile-services container
   grid-template-rows: 500px; }
 
 .second_mobile-services .first-half {
-  background: white; }
+  background: #fff; }
 
 .second_mobile-services .second-half {
   background-image: url(intro-bg-purple.png);

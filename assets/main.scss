@@ -9,9 +9,10 @@ $column-size:50% 50%;
 $row-size:500px;
 $column:grid-column;
 $row:grid-row;
-$white-bg:white;
-
-
+$pri-color:#aaf;
+$sec-color:#80b3ff;
+$tert-color:#fff;
+$transparent-border:50px solid transparent;
 
 /* 
 
@@ -20,8 +21,9 @@ Global styles
 */
 
 body {
-	margin:0;
+    margin: 0;
 }
+
 
 /*
 
@@ -30,12 +32,14 @@ Intro container
 */
 
 .first_intro {
-	background-image:url(intro-bg-purple.png);
-	background-size:cover;
-	background-position:50%;
-	height:100vh;
+    background-image: url(intro-bg-purple.png);
+    background-size: cover;
+    background-position: 50%;
+    height: 100vh;
 }
 
+.first_top-bar {
+}
 
 /*
 
@@ -44,19 +48,18 @@ Mobile-services container
 */
 
 .second_mobile-services {
-	display:$container-grid;
-	grid-template-columns:$column-size;
-	grid-template-rows:$row-size;
+    display: $container-grid;
+    grid-template-columns: $column-size;
+    grid-template-rows: $row-size;
 }
 
 .second_mobile-services {
-	.first-half {
-	background:$white-bg;
+    .first-half {
+        background: $tert-color;
+    }
+    .second-half {
+        background-image: url(intro-bg-purple.png);
+        background-size: cover;
+        background-position: 50%;
+    }
 }
-	.second-half {
-	background-image:url(intro-bg-purple.png);
-	background-size:cover;
-	background-position:50%;
-	}
-}
-
