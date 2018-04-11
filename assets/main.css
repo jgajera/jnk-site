@@ -1,8 +1,46 @@
 /*
 
+Import fonts - Old Standard TT & Comfortaa
+
+*/
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,700|Old+Standard+TT:400,400i,700");
+/*
+
+Reset CSS
+
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/*
+
 Variable declaration
 
 */
+/* CSS Grid */
+/* color it up */
+/* font it up */
+/* misc */
 /* 
 
 Global styles
@@ -22,6 +60,35 @@ Intro container
   background-position: 50%;
   height: 100vh; }
 
+.first_logo-container {
+  text-align: left;
+  width: 220px; }
+
+.first_logo-container img {
+  padding: 10px; }
+
+.first_logo-container h1 {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font: 300 15px "Comfortaa", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline;
+  position: absolute;
+  top: 196px;
+  left: -111px;
+  letter-spacing: 10px;
+  font-size: 12px; }
+
+.first_slogan {
+  position: absolute;
+  bottom: -6.5px;
+  left: 1vw;
+  font: 300 3.25vw "Comfortaa", sans-serif;
+  color: #fff;
+  text-transform: uppercase; }
+
 /*
 
 Mobile-services container
@@ -32,10 +99,10 @@ Mobile-services container
   grid-template-columns: 50% 50%;
   grid-template-rows: 500px; }
 
-.second_mobile-services .first-half {
+.second_mobile-services .second_left {
   background: #fff; }
 
-.second_mobile-services .second-half {
+.second_mobile-services .second_right {
   background-image: url(intro-bg-purple.png);
   background-size: cover;
   background-position: 50%; }

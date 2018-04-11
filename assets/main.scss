@@ -1,18 +1,68 @@
 /*
 
+Import fonts - Old Standard TT & Comfortaa
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,700|Old+Standard+TT:400,400i,700');
+
+
+/*
+
+Reset CSS
+
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/*
+
 Variable declaration
 
 */
 
+/* CSS Grid */
 $container-grid:grid;
-$column-size:50% 50%;
+$half-col-size:50% 50%;
 $row-size:500px;
 $column:grid-column;
 $row:grid-row;
+
+/* color it up */
 $pri-color:#aaf;
 $sec-color:#80b3ff;
 $tert-color:#fff;
+
+/* font it up */
+$standard:'Old Standard TT', serif;
+$comfort:'Comfortaa', sans-serif;
+$allcaps:uppercase;
+
+/* misc */
 $transparent-border:50px solid transparent;
+
 
 /* 
 
@@ -38,7 +88,36 @@ Intro container
     height: 100vh;
 }
 
-.first_top-bar {
+.first_logo-container {
+	text-align: left;
+	width: 220px;
+}
+
+.first_logo-container img {
+	padding:10px;
+}
+
+.first_logo-container h1 {
+	transform: rotate(-90deg);
+	font:300 15px $comfort;
+	text-transform:$allcaps;
+	color:$tert-color;
+	display:inline;
+	position: absolute;
+	top: 196px;
+	left: -111px;
+	letter-spacing: 10px;
+	font-size: 12px;
+}
+
+.first_slogan {
+	position: absolute;
+	bottom: -6.5px;
+	left:1vw;
+	font:300 3.25vw $comfort;
+	color:$tert-color;
+	text-transform:$allcaps;
+
 }
 
 /*
@@ -49,17 +128,20 @@ Mobile-services container
 
 .second_mobile-services {
     display: $container-grid;
-    grid-template-columns: $column-size;
+    grid-template-columns: $half-col-size;
     grid-template-rows: $row-size;
 }
 
 .second_mobile-services {
-    .first-half {
+    .second_left {
         background: $tert-color;
     }
-    .second-half {
+    .second_right {
         background-image: url(intro-bg-purple.png);
         background-size: cover;
         background-position: 50%;
     }
 }
+
+
+
