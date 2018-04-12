@@ -97,17 +97,38 @@ Mobile-services container
 .second_mobile-services {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 500px; }
+  grid-template-rows: 650px; }
 
-.second_mobile-services .second_left {
-  background: #fff;
+.second_mobile-services {
+  /* do 19px on larger screens*/
+  /* do 14px on larger screens*/ }
+  .second_mobile-services .second_left {
+    background: #fff;
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 10%;
+    padding-right: 10%; }
+  .second_mobile-services .second_right {
+    background-image: url(intro-bg-purple.png);
+    background-size: cover;
+    background-position: 50%; }
+  .second_mobile-services .icon-box svg {
+    color: #aaf; }
+  .second_mobile-services .icon-box .svg-inline--fa {
+    font-size: 4vw; }
+  .second_mobile-services h3 {
+    font: 300 2vw "Comfortaa", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    margin-bottom: 5px; }
+  .second_mobile-services p {
+    font: 500 1.55vw "Comfortaa", sans-serif;
+    line-height: 1.75; }
+
+.second_container {
   display: grid;
-  grid-template-rows: repeat(4, 25%);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.second_mobile-services .second_right {
-  background-image: url(intro-bg-purple.png);
-  background-size: cover;
-  background-position: 50%; }
+  grid-template-columns: 20% 80%; }

@@ -46,7 +46,7 @@ Variable declaration
 /* CSS Grid */
 $container-grid:grid;
 $half-col-size:50% 50%;
-$row-size:500px;
+$row-size:650px;
 $column:grid-column;
 $row:grid-row;
 
@@ -138,13 +138,42 @@ Mobile-services container
         display: grid;
         grid-template-rows: repeat(4, 25%);
         align-items: center;
+        padding-left:10%;
+        padding-right:10%;
     }
     .second_right {
         background-image: url(intro-bg-purple.png);
         background-size: cover;
         background-position: 50%;
     }
+
+    .icon-box svg {
+    	color:$pri-color;
+    }
+
+    .icon-box .svg-inline--fa {
+    	font-size:4vw;
+    }
+
+    h3 {
+    	font:300 2vw $comfort;
+    	text-transform:$allcaps;
+    	letter-spacing: 3px;
+		line-height: 1.5;
+		margin-bottom: 5px;
+    } /* do 19px on larger screens*/
+
+    p {
+    	font:500 1.55vw $comfort;
+    	line-height: 1.75;
+    } /* do 14px on larger screens*/
+
+
 }
 
+.second_container {
+	display:grid;
+	grid-template-columns:20% 80%;
+}
 
 
