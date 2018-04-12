@@ -54,6 +54,7 @@ $row:grid-row;
 $pri-color:#aaf;
 $sec-color:#80b3ff;
 $tert-color:#fff;
+/*#cbccff */
 
 /* font it up */
 $standard:'Old Standard TT', serif;
@@ -114,10 +115,10 @@ Intro container
 	position: absolute;
 	bottom: -6.5px;
 	left:1vw;
-	font:300 3.25vw $comfort;
+	font:300 5.15vw $comfort;
 	color:$tert-color;
 	text-transform:$allcaps;
-
+	text-align:center;
 }
 
 /*
@@ -129,7 +130,8 @@ Mobile-services container
 .second_mobile-services {
     display: $container-grid;
     grid-template-columns: $half-col-size;
-    grid-template-rows: $row-size;
+    grid-template-rows: 80vw;
+
 }
 
 .second_mobile-services {
@@ -140,11 +142,13 @@ Mobile-services container
         align-items: center;
         padding-left:10%;
         padding-right:10%;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.24);
+
     }
     .second_right {
-        background-image: url(intro-bg-purple.png);
+        background-image: url(services-blue-mobile.png);
         background-size: cover;
-        background-position: 50%;
+        opacity:0.2;
     }
 
     .icon-box svg {

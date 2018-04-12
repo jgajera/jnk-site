@@ -39,6 +39,7 @@ Variable declaration
 */
 /* CSS Grid */
 /* color it up */
+/*#cbccff */
 /* font it up */
 /* misc */
 /* 
@@ -85,9 +86,10 @@ Intro container
   position: absolute;
   bottom: -6.5px;
   left: 1vw;
-  font: 300 3.25vw "Comfortaa", sans-serif;
+  font: 300 5.15vw "Comfortaa", sans-serif;
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 /*
 
@@ -97,7 +99,7 @@ Mobile-services container
 .second_mobile-services {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 650px; }
+  grid-template-rows: 80vw; }
 
 .second_mobile-services {
   /* do 19px on larger screens*/
@@ -110,11 +112,13 @@ Mobile-services container
         -ms-flex-align: center;
             align-items: center;
     padding-left: 10%;
-    padding-right: 10%; }
+    padding-right: 10%;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24); }
   .second_mobile-services .second_right {
-    background-image: url(intro-bg-purple.png);
+    background-image: url(services-blue-mobile.png);
     background-size: cover;
-    background-position: 50%; }
+    opacity: 0.2; }
   .second_mobile-services .icon-box svg {
     color: #aaf; }
   .second_mobile-services .icon-box .svg-inline--fa {
