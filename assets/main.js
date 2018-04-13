@@ -7,3 +7,6 @@
 
 
 // on hover of background, blur intro text - do not want on mobile
+
+
+
