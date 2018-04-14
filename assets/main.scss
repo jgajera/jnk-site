@@ -240,9 +240,9 @@ Mobile-services container
     }
     .second_right {
         background-image: url(services-white-mobile.png);
-        background-size: cover;
+        background-size:cover;
+        background-position:50%;
         opacity: 1;
-        background-position: 50%;
     }
 
     .icon-box svg {
@@ -286,6 +286,7 @@ Testimonials container
     display: grid;
     grid-template-columns: 6/10*100%;
 }
+
 
 
 

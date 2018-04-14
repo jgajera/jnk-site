@@ -193,8 +193,8 @@ Mobile-services container
   .second_mobile-services .second_right {
     background-image: url(services-white-mobile.png);
     background-size: cover;
-    opacity: 1;
-    background-position: 50%; }
+    background-position: 50%;
+    opacity: 1; }
   .second_mobile-services .icon-box svg {
     color: #aaf; }
   .second_mobile-services .icon-box .svg-inline--fa {
